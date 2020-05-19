@@ -1,0 +1,136 @@
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+:root {
+  --fonts: 'Poppins', 'Merriweather', 'Roboto', 'Poppins', sans-serif;
+  --color-font: white;
+  --color-heading: white;
+  --color-button: rgb(201, 40, 112);
+}
+.body, html {
+  background-image: linear-gradient( 115deg, rgba(31, 78, 46, 0.85), rgba(19, 38, 25, 0.8) ), url("https://lh3.googleusercontent.com/Azgz0WZ3ZUtJSoTsaKdNg7D_9R0KQSaWRlb-DDA9MtukElfuxGyCWD7XHvdf5oeNY75P53RAB1NldKDsHn3P_bd3xU-tcTr2_JXVwuTWqZVYbKIZGwk31SgnqeHF_XtSroiU8yKa8Q=w2400");
+  height: 100%;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--fonts);
+  font-size: 18px;
+  box-sizing: border-box;
+  color: var(--color-font);
+  }
+
+#description {
+  font-style: italic;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-bottom: 35px;
+}
+main {
+  display: flex;
+  flex-direction: column; 
+  width: 750px;
+  max-width: 95vw;
+  margin:2.525rem auto 0 auto;
+}
+header {
+  text-align: center;
+  color: var(--color-heading);
+}
+h1 {
+  margin-bottom: 0px;
+}
+.formbg { 
+  display: block;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  text-align: left;
+  padding: 50px;
+    }
+.sessões {
+  display: flex;
+  flex-direction: column;
+}
+.labels1 {
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+.labels2 {
+  margin-bottom: 8px;
+  margin-top: 30px;
+  display: block;
+}
+.errin {
+  padding-top: 35px;
+}
+fieldset {
+  border: none;
+  margin: 0px;
+  padding: 0px;
+  width:100%;
+}
+  .input-radio, .input-checkbox {
+    position: relative;
+    top: 5px;
+    min-height: 1.15rem;
+    min-width: 1.15rem;
+    margin-right: 8px;
+  }
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"],select, textarea, cxdetexto, .button {
+  border-radius: 5px;
+  width: 100%;
+  border: none;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="number"] {
+font-family: var(--fonts);
+border-color: ;
+padding: 7px 9px;
+font-size: 15px;
+}
+
+#dropdown {
+  cursor: default;
+  font-family: var(--fonts);
+  padding: 8px;
+  color: #333333;
+}
+
+textarea {
+  font-family: var(--fonts);
+  padding: 8px 10px;
+}
+.button {
+  font-family: var(--fonts);
+  font-size: 16px;
+  padding: 10px;
+  background-color: var(--color-button);
+  color: var(--color-font);
+}
+#info-adcional {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+a {
+  color: #DDDDDD;
+}
+a:hover {
+  color: #9999DD;
+}
+
+button:hover {
+  animation-name: color-size;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+@keyframes color-size {
+  100% {
+    transform: scale(1.04);
+    background-color: rgb(48, 121, 71); 
+  }
+}

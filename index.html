@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Survey form - Brasil Invest</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:900|Roboto:900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">Invista com a ajuda da Brasil Invest!</h1>
+            <p id="description">Preencha o formulário abaixo para receber uma ligação de um de nossos consultores!</p>
+        </header>
+        <div class="formbg">
+            <form action="" id="survey-form">
+                <div class="sessões">
+                    <label id="name-label" class="labels1" for="nome">Nome:<br></label>
+                    <input type="text" id="nome" placeholder="Seu nome" required>
+                    <br>
+                    <label id="email-label" class="labels1" for="email">E-mail:<br></label>
+                    <input type="email" id="email" placeholder="Seu e-mail" required>
+                    <br>
+                    <label id="number-label" class="labels1" for="telefone">Telefone:<br></label>
+                    <input id="telefone" type="tel" placeholder="Seu telefone com DDD" required>
+                    <br>
+                    <label class="labels1" for="idade">Idade <span style="font-size: 14px">(opcional)</span>:<br></label>
+                    <input id="idade" type="number" min="12" max="120" placeholder="Sua idade">
+                </div>
+                <br>
+                <div class="sessões">
+                    <fieldset>
+                        <legend class="labels2">Já investe?</legend>
+                        <label for="sim"><input name="já-investe" id="sim" type="radio" value="sim" class="input-radio">Sim</label><br>
+                        <label for="não"><input name="já-investe" id="não" type="radio" value="não" class="input-radio">Não</label><br>
+                    </fieldset>
+                </div>
+                <div class="sessões">
+                    <fieldset>
+                        <legend class="labels2 errin">Qual o seu perfil de investidor?</legend>
+
+                        <input name="perfil" id="conservador" type="radio" value="conservador" class="input-radio">
+                        <label for="conservador">Conservador</label><br>
+
+                        <input name="perfil" id="moderado" type="radio" value="moderado" class="input-radio">
+                        <label for="moderado">Moderado</label><br>
+
+                        <input name="perfil" id="arrojado" type="radio" value="arrojado" class="input-radio">
+                        <label for="arrojado">Arrojado</label><br>
+                    </fieldset>
+
+                    <p id="info-adcional">Não sabe que tipo é você? Faça o <a href="#" target="_blank">teste</a> agora mesmo!</p>
+                </div>
+                <div class="sessões">
+                    <fieldset>
+                        <legend class="labels2">Quais são seus principais interesses?</legend>
+
+                        <label for="renda-fixa"><input name="interesses" id="renda-fixa" type="checkbox" value="renda-fixa" class="input-checkbox">Renda fixa</label><br>
+
+                        <label for="tesouro-direto"><input name="interesses" id="tesouro-direto" type="checkbox" value="tesouro-direto" class="input-checkbox">Tesouro direto</label><br>
+
+                        <label for="renda-variável"><input name="interesses" id="renda-variável" type="checkbox" value="renda-variavel" class="input-checkbox">Renda Variável</label><br>
+
+                        <label for="criptomoedas"><input name="interesses" id="criptomoedas" type="checkbox" value="criptomoedas" class="input-checkbox">Criptomoedas</label><br>
+                    </fieldset>
+                </div>
+                <div class="sessões">
+                    <fieldset>
+                        <legend class="labels2 errin">Como ficou sabendo de nossos serviços?</legend>
+                        <select id="dropdown" name="" placeholder="Selecione uma opção" riquired>
+  <option value="" selected disabled hidden>Selecione uma opção</option>
+  <option value="Redes Sociais">Redes Sociais</option>
+  <option value="brasilinvest.com.br">brasilinvest.com.br</option>
+  <option value="Amigo/amiga">Amigo/amiga</option>
+  <option value="TV">TV</option>
+  <option value="Outro">Outro</option>
+</select>
+                    </fieldset>
+                </div>
+                <div class="sessões">
+                    <p class="labels2">Algum comentário ou sugestão?</p>
+                    <textarea class="cxdetexto" name="comentário" cols="" rows="6" placeholder="Deixe seu comentário aqui"></textarea>
+                    <br>
+                </div>
+                <button class="button" type="submit" id="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
